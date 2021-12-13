@@ -1,1 +1,51 @@
-menyelesaikan tugas
+#proses input 
+nis=(input("Masukan nomor induk siswa : "))
+nama=input("Masukan nama lengkap siswa : ")
+nohp=int(input("Masukan no hp : "))
+jurusan=input("Pilih Jurusan [SI/SIA/TI] : ")
+
+if jurusan == "SI" or jurusan == "si" or jurusan == "Si":
+  nama_jurusann="Sistem Informasi"
+  biaya="Rp. 3,100,000"
+elif jurusan == "SIA" or jurusan == "sia" or jurusan == "Sia":
+    nama_jurusan="Sistem Informasi Akutansi"
+    biaya="Rp. 4,200,000"
+elif jurusan == "TI" or jurusan == "ti" or jurusan == "Ti":
+    nama_jurusan="Teknik Informasi"
+    biaya="Rp. 8,800,000"
+else:
+    nama_jurusan = "Kode Jurusan Salah!"
+    biaya = "0"
+
+print("--------------------------------------------")
+print("\t FORMULIR PENDAFTARAN MAHASISWA BARU")
+print("\t PMB UJB")
+print("--------------------------------------------")
+
+print("NIS : ", nis)
+print("Nama Lengkap : ", nama)
+print("No Hp : ", nohp)
+print("Jurusan : ", nama_jurusan)
+print("Biaya : ", biaya)
+
+print("--------------------------------------------")
+print("                   by Dayatul Rochman       ")
+print("--------------------------------------------")
+
+Masukan nomor induk siswa : 21330006
+Masukan nama lengkap siswa : DayattulRochman
+Masukan no hp : 081339141700
+Pilih Jurusan [SI/SIA/TI] : TI
+--------------------------------------------
+	 FORMULIR PENDAFTARAN MAHASISWA BARU
+	 PMB UJB
+--------------------------------------------
+NIS :  21330006
+Nama Lengkap :  DayattulRochman
+No Hp :  81339141700
+Jurusan :  Teknik Informasi
+Biaya :  Rp. 8,800,000
+--------------------------------------------
+                   by Dayatul Rochman       
+--------------------------------------------
+
